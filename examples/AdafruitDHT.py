@@ -50,7 +50,7 @@ a1=1
 
   if humidity is not None and temperature is not None:
     while a1 <= 10 :
-    print('Temp={0:0.1f}*  Humidity={1:0.1f}%'.format(temperature, humidity))
+      print('Temp={0:0.1f}*  Humidity={1:0.1f}%'.format(temperature, humidity))
     a1 = a1+1
   else:
       print('Failed to get reading. Try again!')
