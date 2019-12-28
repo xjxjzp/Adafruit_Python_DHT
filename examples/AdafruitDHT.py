@@ -23,7 +23,7 @@ import sys
 
 import Adafruit_DHT
 a1=1
-while a1 <= 10:
+
 # Parse command line parameters.
   sensor_args = { '11': Adafruit_DHT.DHT11,
                  '22': Adafruit_DHT.DHT22,
@@ -39,7 +39,7 @@ while a1 <= 10:
 # Try to grab a sensor reading.  Use the read_retry method which will retry up
 # to 15 times to get a sensor reading (waiting 2 seconds between each retry).
   humidity, temperature = Adafruit_DHT.read_retry(sensor, pin)
-
+while a1 <= 10:
 # Un-comment the line below to convert the temperature to Fahrenheit.
 # temperature = temperature * 9/5.0 + 32
 
