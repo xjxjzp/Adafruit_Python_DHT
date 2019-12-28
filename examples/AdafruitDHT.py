@@ -19,10 +19,11 @@
 # LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 # OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 # SOFTWARE.
+a1=1
+while a1 <= 10 :
 import sys
 
 import Adafruit_DHT
-a1=1
 
 # Parse command line parameters.
   sensor_args = { '11': Adafruit_DHT.DHT11,
@@ -49,10 +50,9 @@ a1=1
 # If this happens try again!
 
   if humidity is not None and temperature is not None:
-    while a1 <= 10 :
+   
       print('Temp={0:0.1f}*  Humidity={1:0.1f}%'.format(temperature, humidity))
-    a1 = a1+1
   else:
       print('Failed to get reading. Try again!')
      sys.exit(1)
-    
+ a1 = a1+1    
