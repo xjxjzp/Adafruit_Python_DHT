@@ -23,7 +23,7 @@ import sys
 
 import Adafruit_DHT
 a1=1
-while a1<=10:
+while a1 <= 10:
 # Parse command line parameters.
   sensor_args = { '11': Adafruit_DHT.DHT11,
                  '22': Adafruit_DHT.DHT22,
