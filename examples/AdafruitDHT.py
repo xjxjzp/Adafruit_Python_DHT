@@ -22,8 +22,8 @@
 import sys
 
 import Adafruit_DHT
-
-
+a1=1
+while a<=10:
 # Parse command line parameters.
 sensor_args = { '11': Adafruit_DHT.DHT11,
                 '22': Adafruit_DHT.DHT22,
@@ -52,3 +52,4 @@ if humidity is not None and temperature is not None:
 else:
     print('Failed to get reading. Try again!')
     sys.exit(1)
+    a1 = a1+1
